@@ -1,0 +1,13 @@
+power_node:
+  ros__parameters:
+    publish_hz: 2.0     # Make sure this matches your personal table value (292%4 == 0)
+    drain_coeff: 1.0       #0.5 + 0.1*(292%7)
+drive_node:
+  ros__parameters:
+    max_speed: 3.0
+
+odom_node:
+  ros__parameters:
+    speed_limit: 2.0    # 1.5 + 0.5*(292%5)
+    rover_id: 292
+    odom_hz: 1.0
